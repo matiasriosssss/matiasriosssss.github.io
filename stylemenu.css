@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box; /* Asegura que padding y border no aumenten el tamaño total */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    background-color: #435b3e;
+    font-family: nerko one;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Vista completa en altura */
+}
+
+header {
+    background-color: #435b3e;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+.header{
+    display: flex;
+    align-items: center; /* Alinea el contenido verticalmente */
+    justify-content: center;
+    height: 100%;
+}
+
+#imagenLogo {
+    height: 40px;
+    width: 50px;
+    
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #435b3e,#fd7e14, #435b3e);
+}
+.fila{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;
+    
+}
+.card{
+    margin: 25px;
+    width: 22%;
+    font-family: nerko one;
+}
+footer {
+    background-color: #435b3e;
+    height: 85px; /* Altura fija */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: nerko one;
+}
+footer div{
+    color: white;
+    display: flex;
+    flex-direction: column; /* Icono encima del texto */
+    align-items: center; /* Centra iconos y texto */
+    width: 33%; /* Cada sección ocupa un tercio */
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+.icon :hover{
+    color: #eb984e;
+}
+
+@media (max-width: 768px) {
+    footer {
+        background-color: #435b3e;
+        flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+    }
+
+    footer div {
+        background-color: #435b3e;
+        width: 100%; /* Cada sección ocupa el 100% del ancho */
+        
+    }
+    main{
+        background-size: 33% 25%; /* Mantiene el tamaño original de la imagen */
+
+    }
+    .fila{
+        flex-direction: column;
+    }
+    .card{
+        margin: 10px;
+        width: 75%;
+    }
+}

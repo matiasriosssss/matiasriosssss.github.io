@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    background-color: #435b3e;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Vista completa en altura */
+}
+
+/*b#header {
+    background-color: #435b3e;
+    height: 50px;
+    width: 100%;
+}*/
+.navbar {
+    background-color: #435b3e;
+
+}
+#imagenLogo {
+height: 40px;
+width: 50px;
+}
+
+.custom-bg {
+    background-color: #435b3e; /* Color de fondo personalizado */
+    width: 100%; /* Asegura que ocupe todo el ancho del viewport */
+    padding: 0;}
+#tcnNav{
+    color:  white;
+}
+#menuNav{
+    color: white;
+}
+main{
+    background: linear-gradient(to bottom, #435b3e, #fd7e14, #435b3e);
+    flex: 1; /* Ocupa todo el espacio disponible */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.textomain{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.divcarrusel{
+    width: 40%;
+    border: 5px solid white;
+}
+.mainnn h1{
+    font-family: 0;
+}
+h1{
+    font-size: 150px;
+}
+footer {
+    background-color: #435b3e;
+    height: 85px; /* Altura fija */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    grid-column: 33% 33% 33%;
+}
+footer div{
+    color: white;
+    display: flex;
+    flex-direction: column; /* Icono encima del texto */
+    align-items: center; /* Centra iconos y texto */
+    width: 33%; /* Cada sección ocupa un tercio */
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+.icon :hover{
+    color: #eb984e;
+}
+
+@media (max-width: 768px) {
+    footer {
+        background-color: #435b3e;
+        flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+    }
+
+    footer div {
+        background-color: #435b3e;
+        width: 100%; /* Cada sección ocupa el 100% del ancho */
+    }
+    .divcarrusel{
+        width: 80%;
+    }
+}

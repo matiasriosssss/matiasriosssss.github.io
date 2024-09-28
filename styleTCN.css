@@ -1,0 +1,154 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    background-color: #435b3e;
+    font-family: nerko one;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Vista completa en altura */
+}
+
+
+header {
+    background-color: #435b3e;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+.header{
+    margin: auto;
+}
+
+#imagenLogo {
+    height: 40px;
+    width: 50px;
+}
+label{
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background: linear-gradient(to bottom, #435b3e, #fd7e14, #435b3e);
+}
+#imagenFormulario{
+    max-width: 100%; /* Evita que la imagen sea más ancha que el contenedor */
+    height: auto; /* Mantén las proporciones de la imagen */
+    filter: brightness(0%);
+}
+.divimagen{
+    width: 35%;
+    margin: 0 auto; /* Centra horizontalmente el div */
+    display: flex; /* Asegura que el contenido interno se alinee */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+.divparteformulario{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    margin: auto;
+}
+form{
+    display: flex;
+    margin: auto;
+    color: black;
+}
+.divformulario{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+.divfila{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;   
+}
+.divfilaa{
+    margin: auto;
+
+}
+.divindividual{
+    margin: auto;
+
+}
+input[type="text"], select {
+    height: 30px;
+    width: 190px; 
+}
+.enviar{
+    margin: auto;
+}
+   
+.divimagen{
+    width: 35%;
+    margin: auto;
+}
+
+footer {
+    background-color: #435b3e;
+    height: 85px; /* Altura fija */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer div{
+    color: white;
+    display: flex;
+    flex-direction: column; /* Icono encima del texto */
+    align-items: center; /* Centra iconos y texto */
+    width: 33%; /* Cada sección ocupa un tercio */
+    text-align: center;
+    padding-top: 20px;
+}
+#h3{
+    font-size: 65px;
+}
+
+.icon :hover{
+    color: #eb984e;
+}
+
+@media (max-width: 768px) {
+    footer {
+        background-color: #435b3e;
+        flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+    }
+
+    footer div {
+        background-color: #435b3e;
+        width: 100%; /* Cada sección ocupa el 100% del ancho */
+    }
+    main{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+    .divformulario{
+        width: 100%;
+    }
+
+    .divimagen{
+        width: 100%;
+        margin: auto;
+        
+    }
+    #imagenFormulario{
+        height: 80%;
+    }
+    .divfila{
+        flex-direction: column;
+    }
+    #h3{
+        font-size: 25px;
+    }
+}
